@@ -45,19 +45,13 @@
    
         if(curr_player==0)
         {
-            if (hold_1 >= 10) {
-                document.querySelector('.player--0').classList.add('player--winner');
-                document.querySelector('.player--0').classList.remove('player--active');
-                document.body.textContent="Player 1 wins";
-            }
-
             hold_1 = hold_1+ current_score;
             document.getElementById("score--0").textContent=hold_1;
             // document.getElementsByClassName('player').style.backgroundColor='red';
             // document.querySelector(".player--0").style.backgroundColor='cyan';
             // document.querySelector(".player--1").style.backgroundColor=' #8fcf75';
             
-            if (hold_1 >= 50) {
+            if (hold_1 >= 20) {
                 document.querySelector('.player--0').classList.add('player--winner');
                 document.querySelector('.player--0').classList.remove('player--active');
                 document.body.textContent="Player 1 wins";
@@ -67,20 +61,13 @@
         }
         else
         {
-            if (hold_2 >= 50) {
-                document.querySelector('.player--1').classList.add('player--winner');
-                document.querySelector('.player--1').classList.remove('player--active');
-                document.body.textContent="Player 2 wins";
-                document.body.style.fontSize = "48px";
-                document.body.style.fontWeight = "bold";
-            }
                hold_2 = hold_2+ current_score;
             document.getElementById("score--1").textContent=hold_2;
             // document.querySelector(".player--1").style.backgroundColor='yellow';
             // document.querySelector(".player--0").style.backgroundColor=' #33f0a1';
             // hold_2=hold;
             
-            if (hold_2 >= 50) {
+            if (hold_2 >= 20) {
                 document.body.textContent="Player 2 wins";
                 document.body.style.fontSize = "48px";
                 document.body.style.fontWeight = "bold";

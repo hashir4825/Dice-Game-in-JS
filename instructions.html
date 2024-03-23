@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Instructions</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+      body {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        height: 100vh;
+        color: #333;
+        font-size: 17px;
+        /* background-color: #f8f9fa; */
+        background-image: linear-gradient(
+          to top left,
+          #c935e7 0%,
+          #53e619 100%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        max-width: 800px;
+        padding: 50px 20px;
+      }
+
+      .instructions-container {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .instructions-container h1 {
+        text-align: center;
+      }
+
+      .instructions-container h2 {
+        margin-top: 20px;
+      }
+
+      .instructions-container ol {
+        margin-left: 20px;
+      }
+
+      .instructions-container li {
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: rgb(211, 49, 28);
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: rgb(151, 58, 46);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="instructions-container">
+        <h1>Game Instructions</h1>
+        <p>
+          This is a two-player dice game where players take turns rolling a dice
+          and accumulating points until one of them reaches a score of 10 or
+          more.
+        </p>
+        <h2>Instructions:</h2>
+        <ol>
+          <li>Player 1 starts the game.</li>
+          <li>
+            Click the "Roll Dice" button to roll the dice. Keep clicking to
+            accumulate points.
+          </li>
+          <li>
+            If you roll a 1, your current score resets to 0, and it becomes the
+            other player's turn.
+          </li>
+          <li>
+            Click the "Hold" button to add your current score to your total
+            score.
+          </li>
+          <li>
+            The first player to reach a total score of 20 or more wins the game.
+          </li>
+        </ol>
+        <button onclick="location.href='index.html';" class="btn">
+          Start Game
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

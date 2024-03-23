@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Dice Game</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Dice Game</title>
+  <style>
+    .btn-no-decoration {
+      text-decoration: none;
+    }
+    .btn-custom {
+  background-color: rgb(211, 49, 28);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 19px;
+  margin-left: 420px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background-color: rgb(165, 62, 48);
+}
+  </style>
+</head>
+<body>
+  <div>
+    <div class="text-center mt-5">
+      <button onclick="location.href='instructions.html';" class=" btn-custom my-3 btn-no-decoration">Instructions</button>
+    </div>
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
@@ -25,12 +50,13 @@
           <p class="current-score" id="current--1">0</p>
         </div>
       </section>
-
+  
       <img src="dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
